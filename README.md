@@ -27,22 +27,22 @@ GET localhost:5000/api/?name= + yokai-name
 
 ### To search by class
 ```
-GET localhost:5000/api/?name= + yokai-class
+GET localhost:5000/api/?class= + yokai-class
 ```
 
 ### To search by rank
 ```
-GET localhost:5000/api/?name= + yokai-rank
+GET localhost:5000/api/?rank= + yokai-rank
 ```
 
 ### To search by element
 ```
-GET localhost:5000/api/?name= + yokai-element
+GET localhost:5000/api/?element= + yokai-element
 ```
 
 ### To search by favorite food
 ```
-GET localhost:5000/api/?name= + yokai-favorite-food
+GET localhost:5000/api/?favoriteFood= + yokai-favorite-food
 ```
 
 ### To add a yokai
