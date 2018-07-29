@@ -3,10 +3,15 @@ const app = express();
 const config = require("./knexfile");
 
 const bodyParser = require("body-parser");
+var path = require('path');
 
 const knex = require('knex')(config);
 
 app.use(bodyParser.json({ type: "application/json", limit: "50mb" }));
+
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname + '/index.html'));
+});
 
 app.get("/api/all/", (req, res) => {
   knex('yokai_watch').then((data) => {
