@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Yo-kai watch api</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <style>
+        body {
+            text-align: center;
+            background: url("http://vignette3.wikia.nocookie.net/yokaiwatch/images/5/50/Wiki-background/revision/latest?cb=20160507183219");
+            font-size: 150%;
+            margin: 0 5%;
+        }
+    </style>
+    <h1>Yo-kai Watch api</h1>
+
+    <p>This was created during my time as a student at Code Chrysalis</p>
+
+    <img src="https://lumiere-a.akamaihd.net/v1/images/h_yokaiwatch_home_cebb4473.jpeg?region=0,0,1536,578&quality=8" width="100%">
+    <br>
+    <h2> What is this?</h2>
+    <p>This is a full RESTful API linked to a database detailing everything about the Yo-kai main game series characters.</p>
+    <br>
+    <h2> How to use this?</h2>
+    <h3> To view all the yo-kai</h3>
+    <code>GET localhost:5000/api/all</code>
+    <br>
+    <h3> To search by id</h3>
+    <code>GET localhost:5000/api/?id= + yakai-id</code>
+    <br>
+    <h3> To search by name</h3>
+    <code>GET localhost:5000/api/?name= + yokai-name</code>
+    <br>
+    <h3> To search by class</h3>
+    <code>GET localhost:5000/api/?class= + yokai-class</code>
+    <br>
+    <h3> To search by rank</h3>
+    <code>GET localhost:5000/api/?rank= + yokai-rank</code>
+    <br>
+    <h3> To search by element</h3>
+    <code>GET localhost:5000/api/?element= + yokai-element</code>
+    <br>
+    <h3> To search by favorite food</h3>
+    <code>GET localhost:5000/api/?favoriteFood= + yokai-favorite-food</code>
+    <br>
+    <h3> To add a yokai</h3>
+    <p>you hav e to add a JSON object with the following format
+        <br>
+        <code>{ <br>"name": "",<br> "class": "",<br> "rank": "",<br> "element": "",<br> "favoriteFood":
+    "",<br> "evolution": ""<br>}</code>
+        <br>
+        <code>POST localhost:5000/api/</code>
+    </p>
+    <br>
+    <h3> To update a yokai</h3>
+    <code>PUT localhost:5000/api/?yokai-key= + yokai-value</code>
+    <br>
+    <code>example1 localhost:5000/api/?name=Undy<code><br></code> example2 localhost:5000/api/?id=5</code>
+    </p>
+    <br>
+    <h3> To delete a yokai</h3>
+    <p>
+        <code>DELETE localhost:5000/api/?yokai-key= + yokai-value</code>
+        <br>
+        <code>example1 localhost:5000/api/?rank=E</code>
+        <br>
+        <code>example2 localhost:5000/api/?element=Fire</code>
+    </p>
+
+    <br>
+    <hr>
+    <br>
+    <a href="https://github.com/nourbalaha/api-solo-project" target="blank">Github Repo</a><br>
+    <p>By: Nour Balaha</p>
+</body>
+
+</html>
