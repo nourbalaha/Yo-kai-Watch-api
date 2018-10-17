@@ -1,7 +1,5 @@
 # Yo-kai Watch api
 
-This was created during my time as a student at Code Chrysalis
-
 ![Yokai Watch](./img/yokai.jpg)
 
 ## What is this?
